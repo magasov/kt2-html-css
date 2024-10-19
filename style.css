@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+section {
+  margin: 100px 0;
+}
+
+body {
+  background: #000000;
+  color: #fff;
+  padding: 0 12%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.navbar a.active {
+  color: #49b649;
+}
+
+.navbar a:hover {
+  color: #49b649;
+  transition: all 0.3s ease;
+}
+
+.nav__btn {
+  width: 163px;
+  height: 48px;
+  background: #49b649;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 0;
+}
+
+.nav__btn:hover {
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px 8px #49b649;
+}
+
+.save__h2 h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.save__h2 b {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.74px;
+}
+
+.save__span {
+  color: #49b649;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__left {
+  display: flex;
+  bottom: 100px;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+.home__left h1 {
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.home__left p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.btn1 {
+  width: 197px;
+  height: 63px;
+  background: #49b649;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.btn2 {
+  margin: 20px 0;
+  padding: 10px 0;
+  width: 296px;
+  height: 63px;
+  background: #49b649;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.icons p {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image__home {
+  width: 248px;
+  height: 208px;
+}
+
+.home__beetwen {
+  display: flex;
+  column-gap: 110px;
+}
+
+.saving {
+  color: #49b649;
+}
+
+.save {
+  margin: 120px;
+}
+
+.service__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__images a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+}
+
+.save__p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.travel__one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel__two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel__three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.travel__one-left h3 {
+  font-size: 56px;
+  font-weight: 700;
+  width: 532px;
+  line-height: 76.38px;
+}
+
+.travel__one-left p {
+  width: 602px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.travel__two-right {
+  text-align: right;
+}
+
+.travel__three-left h3 {
+  font-size: 56px;
+  font-weight: 700;
+  width: 532px;
+  line-height: 76.38px;
+}
+.travel__three-left p {
+  width: 602px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.travel__two-right h3 {
+  font-size: 56px;
+  font-weight: 700;
+  width: 532px;
+  line-height: 76.38px;
+}
+
+.travel__two-right p {
+  width: 523px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.last {
+  width: 100%;
+  height: 859px;
+  background: url(./img/last-background.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last h2 {
+  width: 582px;
+  margin-top: 200px;
+  width: 582px;
+  font-size: 56px;
+}
+
+.last p {
+  width: 477px;
+  font-size: 20px;
+  line-height: 32.74px;
+  font-weight: 600;
+}
+
+.messangers a {
+  color: #fff;
+  margin: 4px;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__last p {
+  width: 315px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer_left {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left_heig {
+  height: 140px;
+}
+
+.footer_left h4 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #49b649;
+}
+
+.footer_left input {
+  width: 408px;
+  height: 59px;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+}
