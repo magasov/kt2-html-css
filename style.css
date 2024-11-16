@@ -1,3 +1,4 @@
+/* Общие стили */
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,14 @@ section {
   margin: 100px 0;
 }
 
+.menu {
+  display: none;
+}
+
+.nav__menu {
+  display: none;
+}
+
 body {
   background: #000000;
   color: #fff;
@@ -16,6 +25,7 @@ body {
 }
 
 header {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -297,4 +307,402 @@ footer {
   border-radius: 8px;
   padding: 20px;
   position: relative;
+}
+
+/* Медиа-запросы */
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 0 5%;
+  }
+
+  .navbar {
+    column-gap: 15px;
+  }
+
+  .nav__btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .save__h2 h2 {
+    font-size: 48px;
+  }
+
+  .save__h2 b {
+    font-size: 20px;
+  }
+
+  .home__left h1 {
+    font-size: 40px;
+  }
+
+  .home__left p {
+    font-size: 20px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .image__home {
+    width: 100%;
+    height: auto;
+  }
+
+  .home__beetwen {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .save {
+    margin: 60px 0;
+  }
+
+  .service__images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel__one,
+  .travel__two,
+  .travel__three {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .travel__one-left h3,
+  .travel__three-left h3,
+  .travel__two-right h3 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .travel__one-left p,
+  .travel__three-left p,
+  .travel__two-right p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .last {
+    height: auto;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last h2 {
+    width: 100%;
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .last p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__last p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_left input {
+    width: 100%;
+  }
+}
+
+/* Планшеты (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 0 8%;
+  }
+
+  .navbar {
+    column-gap: 20px;
+  }
+
+  .nav__btn {
+    width: 140px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .save__h2 h2 {
+    font-size: 56px;
+  }
+
+  .save__h2 b {
+    font-size: 22px;
+  }
+
+  .home__left h1 {
+    font-size: 48px;
+  }
+
+  .home__left p {
+    font-size: 22px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    height: 55px;
+    font-size: 17px;
+  }
+
+  .image__home {
+    width: 200px;
+    height: 160px;
+  }
+
+  .home__beetwen {
+    column-gap: 50px;
+  }
+
+  .save {
+    margin: 80px 0;
+  }
+
+  .service__images {
+    justify-content: space-around;
+  }
+
+  .travel__one,
+  .travel__two,
+  .travel__three {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .travel__one-left h3,
+  .travel__three-left h3,
+  .travel__two-right h3 {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .travel__one-left p,
+  .travel__three-left p,
+  .travel__two-right p {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .last {
+    height: auto;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .last h2 {
+    width: 100%;
+    font-size: 48px;
+    margin-top: 0;
+  }
+
+  .last p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__last p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_left input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .home {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .image__home {
+    display: none;
+  }
+
+  .travel__three-right img {
+    width: 100%;
+  }
+
+  .home__right img {
+    width: 100%;
+  }
+
+  .travel__one-right img {
+    width: 100%;
+  }
+
+  .travel__two-left img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__right {
+    margin: 100px;
+  }
+
+  .home__right img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .nav__menu {
+    top: 100px;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .navMenu {
+    background: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+  }
+}
+
+/* Десктопы (от 1024px) */
+@media (min-width: 1024px) {
+  body {
+    padding: 0 12%;
+  }
+
+  .navbar {
+    column-gap: 30px;
+  }
+
+  .nav__btn {
+    width: 163px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .save__h2 h2 {
+    font-size: 64px;
+  }
+
+  .save__h2 b {
+    font-size: 24px;
+  }
+
+  .home__left h1 {
+    font-size: 54px;
+  }
+
+  .home__left p {
+    font-size: 24px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 197px;
+    height: 63px;
+    font-size: 18px;
+  }
+
+  .image__home {
+    width: 248px;
+    height: 208px;
+  }
+
+  .home__beetwen {
+    column-gap: 110px;
+  }
+
+  .save {
+    margin: 120px 0;
+  }
+
+  .service__images {
+    justify-content: space-between;
+  }
+
+  .travel__one,
+  .travel__two,
+  .travel__three {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .travel__one-left h3,
+  .travel__three-left h3,
+  .travel__two-right h3 {
+    font-size: 56px;
+    width: 532px;
+  }
+
+  .travel__one-left p,
+  .travel__three-left p,
+  .travel__two-right p {
+    width: 602px;
+    font-size: 24px;
+  }
+
+  .last {
+    height: 859px;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .last h2 {
+    width: 582px;
+    font-size: 56px;
+    margin-top: 200px;
+  }
+
+  .last p {
+    width: 477px;
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer__last p {
+    width: 315px;
+    text-align: left;
+  }
+
+  .footer_left input {
+    width: 408px;
+  }
 }

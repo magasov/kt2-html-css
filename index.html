@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trasave</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> <!-- подключение библиотеки box-icons он нужен для иконок в footer -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- подключение библиотеки box-icons он нужен для иконок в footer -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,130 +19,231 @@
       rel="stylesheet"
     />
   </head>
-</head>
-<body>
-     <header> <!-- Делаем шапку сайта -->
-        <img src="./img/logo.png" alt="logo">
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">Save</a>
-            <a href="#">Travel</a>
-            <a href="#">Experience</a>
-            <a href="#">Wallet</a>
-            <a class="nav__btn" href="#">Contact Us</a>
+  <body>
+    <header>
+      <!-- Делаем шапку сайта -->
+      <img id="menu-toggle" src="./img/logo.png" alt="logo" />
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Save</a>
+        <a href="#">Travel</a>
+        <a href="#">Experience</a>
+        <a href="#">Wallet</a>
+        <a class="nav__btn" href="#">Contact Us</a>
+      </nav>
+      <img src="./img/menu.svg"  onclick="changeStyle()" class="menu" />
+      <div id="navbar" class="nav__menu">
+        <nav class="navMenu" id="myBlock">
+          <a href="#" class="active">Home</a>
+          <a href="#">Save</a>
+          <a href="#">Travel</a>
+          <a href="#">Experience</a>
+          <a href="#">Wallet</a>
+          <a class="nav__btn" href="#">Contact Us</a>
         </nav>
+      </div>
+      </div>
     </header>
 
     <main>
-        <section class="home" id="home"> <!-- Делаем секцию home -->
-            <div class="home__left">
-                <h1><span class="saving">SAVING</span> YOUR MONEY FOR TRAVEL THROUGH TRAVEL FUND</h1>
-                <p>Save your money for travel securely and explore the whole world with trasave, we provide you the best travel services.</p>
-                <br><br>    
-                <button class="btn1">Save now</button>
-                <button class="btn2">UI/UX Case Study</button> <br><br>
-                <div class="home__beetwen">
-                    <div class="icons">
-                        <p><img width="35" src="./img/Figma.png" alt="figma-icons">figma</p>
-                        <p><img width="35" src="./img/adobe-photoshop-icon 1.png" alt="Photoshop-icons">Photoshop</p>
-                        <p><img width="35" src="./img/adobe-illustrator-cc-seeklogo.com 1.png" alt="Illustrator-icons">Illustrator</p>
-                    </div>
-                    <img class="image__home" src="./img/iconsBtn.png" alt="icons">
-                </div>
+      <section class="home" id="home">
+        <!-- Делаем секцию home -->
+        <div class="home__left">
+          <h1>
+            <span class="saving">SAVING</span> YOUR MONEY FOR TRAVEL THROUGH
+            TRAVEL FUND
+          </h1>
+          <p>
+            Save your money for travel securely and explore the whole world with
+            trasave, we provide you the best travel services.
+          </p>
+          <br /><br />
+          <button class="btn1">Save now</button>
+          <button class="btn2">UI/UX Case Study</button> <br /><br />
+          <div class="home__beetwen">
+            <div class="icons">
+              <p>
+                <img width="35" src="./img/Figma.png" alt="figma-icons" />figma
+              </p>
+              <p>
+                <img
+                  width="35"
+                  src="./img/adobe-photoshop-icon 1.png"
+                  alt="Photoshop-icons"
+                />Photoshop
+              </p>
+              <p>
+                <img
+                  width="35"
+                  src="./img/adobe-illustrator-cc-seeklogo.com 1.png"
+                  alt="Illustrator-icons"
+                />Illustrator
+              </p>
             </div>
+            <img class="image__home" src="./img/iconsBtn.png" alt="icons" />
+          </div>
+        </div>
 
-            <div class="home__right">
-                <img src="./img/home.png" alt="home">
-            </div>
-        </section> <!-- Закрытие секции home -->
+        <div class="home__right">
+          <img src="./img/home.png" alt="home" />
+        </div>
+      </section>
+      <!-- Закрытие секции home -->
 
-        <section class="save" id="save"> <!-- Делаем секцию save -->
-            <div class="save__h2" style="text-align: center;">
-                <h2>Why to <span class="save__span">travel</span> with us?</h2> <br>
-            <b>Ambitious about your next adventure but sick of saving money? End up sneaking into those savings because well.. You’re bored? Lost motivation? You don’t feel the funds are growing fast enough? Saving just sucks? Trasave has introduced an epic new way to reward you for your savings for travel</b>
-            </div> <br> <br> <br>
-            <nav class="service__images">
-                <a href="#"><img src="./img/Service Tips.png"  width="100" alt="Service">Save money <br>
-                    <p class="save__p">Invest in trasave <br> securily for future</p>
-                </a>
-                <a href="#"><img src="./img/Wedding Gift.png" width="100" alt="Wedding">Earn rewards <br>
-                    <p class="save__p">Earn rewards and <br> track your money</p>
-                </a>
-                <a href="#"><img src="./img/Travel Agency.png" width="100" alt="Travel">Travel <br>
-                    <p class="save__p">Use this money for <br> your travelling</p>
-                </a>
-            </nav>
-        </section> <!-- Закрытие секции save -->
+      <section class="save" id="save">
+        <!-- Делаем секцию save -->
+        <div class="save__h2" style="text-align: center">
+          <h2>Why to <span class="save__span">travel</span> with us?</h2>
+          <br />
+          <b
+            >Ambitious about your next adventure but sick of saving money? End
+            up sneaking into those savings because well.. You’re bored? Lost
+            motivation? You don’t feel the funds are growing fast enough? Saving
+            just sucks? Trasave has introduced an epic new way to reward you for
+            your savings for travel</b
+          >
+        </div>
+        <br />
+        <br />
+        <br />
+        <nav class="service__images">
+          <a href="#"
+            ><img src="./img/Service Tips.png" width="100" alt="Service" />Save
+            money <br />
+            <p class="save__p">
+              Invest in trasave <br />
+              securily for future
+            </p>
+          </a>
+          <a href="#"
+            ><img src="./img/Wedding Gift.png" width="100" alt="Wedding" />Earn
+            rewards <br />
+            <p class="save__p">
+              Earn rewards and <br />
+              track your money
+            </p>
+          </a>
+          <a href="#"
+            ><img
+              src="./img/Travel Agency.png"
+              width="100"
+              alt="Travel"
+            />Travel <br />
+            <p class="save__p">
+              Use this money for <br />
+              your travelling
+            </p>
+          </a>
+        </nav>
+      </section>
+      <!-- Закрытие секции save -->
 
-        <section class="travel" id="travel"> <!-- Делаем секцию travel -->
-            <div class="travel__one">
-                <div class="travel__one-left">
-                    <h3>Save and get Travel Fund Rewards</h3> <br>
-                    <p>Trasave travel fund is a fun and secure way to save. Not only can you customise your own travel journey but also earn rewards while travelling by uploading videos of the destination. Also it gives cool tips to 
-                        <br> <br>
-                        encourage more savings and  we will also reward you with epic cool gifts when you hit saving goals. </p>
-                </div>
-                <div class="travel__one-right">
-                    <img src="./img/travel-img1.png" alt="travel-img1">
-                </div>
-            </div>
+      <section class="travel" id="travel">
+        <!-- Делаем секцию travel -->
+        <div class="travel__one">
+          <div class="travel__one-left">
+            <h3>Save and get Travel Fund Rewards</h3>
+            <br />
+            <p>
+              Trasave travel fund is a fun and secure way to save. Not only can
+              you customise your own travel journey but also earn rewards while
+              travelling by uploading videos of the destination. Also it gives
+              cool tips to <br />
+              <br />
+              encourage more savings and we will also reward you with epic cool
+              gifts when you hit saving goals.
+            </p>
+          </div>
+          <div class="travel__one-right">
+            <img src="./img/travel-img1.png" alt="travel-img1" />
+          </div>
+        </div>
 
-            <div class="travel__two">
-                <div class="travel__two-left">
-                    <img src="./img/travel-img2.png" alt="travel-img2">
-                </div>
-                <div class="travel__two-right">
-                    <h3>Find the best places of the world</h3> <br>
-                    <p>We at trasave provide ou the best destination for travel, go and find new places and add to your travel list and go for travel later and enjoy, use your saved money later without thinking about money</p>
-                </div>
-            </div>
+        <div class="travel__two">
+          <div class="travel__two-left">
+            <img src="./img/travel-img2.png" alt="travel-img2" />
+          </div>
+          <div class="travel__two-right">
+            <h3>Find the best places of the world</h3>
+            <br />
+            <p>
+              We at trasave provide ou the best destination for travel, go and
+              find new places and add to your travel list and go for travel
+              later and enjoy, use your saved money later without thinking about
+              money
+            </p>
+          </div>
+        </div>
 
-            <div class="travel__three">
-                <div class="travel__three-left">
-                    <h3>Save now and earn cashback upto 250</h3> <br>
-                    <p>We at trasave provide ou the best destination for travel</p> <br> <br>
-                    <button class="nav__btn">Let’s save</button>
-                </div>
-                <div class="travel__three-right">
-                    <img src="./img/travel-img3.png" alt="travel-img1">
-                </div>
-            </div>
-        </section> <!-- Закрытие секции travel -->
+        <div class="travel__three">
+          <div class="travel__three-left">
+            <h3>Save now and earn cashback upto 250</h3>
+            <br />
+            <p>We at trasave provide ou the best destination for travel</p>
+            <br />
+            <br />
+            <button class="nav__btn">Let’s save</button>
+          </div>
+          <div class="travel__three-right">
+            <img src="./img/travel-img3.png" alt="travel-img1" />
+          </div>
+        </div>
+      </section>
+      <!-- Закрытие секции travel -->
 
-        <section class="last"> <!-- Делаем секцию last с background-image -->
-            <h2>Save your travel money in Trasave and get top grade security with trasave</h2>
-            <p>There are so many benefits of travelling with Trasave. Not only do we provide you with an awesome digital travel solution , an awesome travel app, but we also make it super easy and fun for you to store, save and move your travel money.
-<br><br>
-                As well as saving money, the TRASAVE travel fund is a good way to track your travel money. Tracking Expenses is important when travelling as you don’t want to be stuck in the middle of your journey budgeting your travel. We created the travel fund so you can store all your travel money and then track your money from your travel fund expense tracker. </p>
-        </section> <!-- Закрытие секции last -->
+      <section class="last">
+        <!-- Делаем секцию last с background-image -->
+        <h2>
+          Save your travel money in Trasave and get top grade security with
+          trasave
+        </h2>
+        <p>
+          There are so many benefits of travelling with Trasave. Not only do we
+          provide you with an awesome digital travel solution , an awesome
+          travel app, but we also make it super easy and fun for you to store,
+          save and move your travel money. <br /><br />
+          As well as saving money, the TRASAVE travel fund is a good way to
+          track your travel money. Tracking Expenses is important when
+          travelling as you don’t want to be stuck in the middle of your journey
+          budgeting your travel. We created the travel fund so you can store all
+          your travel money and then track your money from your travel fund
+          expense tracker.
+        </p>
+      </section>
+      <!-- Закрытие секции last -->
     </main>
 
-    <footer> <!-- Подвал сайта -->
-        <div class="footer__last">
-            <img src="./img/logo.png" alt="footer-logo" width="111">
-            <p>TRASAVE travel fund is a good way to track your travel money. </p> <br>
-            <nav class="messangers">
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-            </nav>
-        </div>
-        <div class="footer_left">
-            <h4>About</h4>
-            <p>Technical Info</p>
-            <p>Other Products</p>
-        </div>
-        <div class="footer_left left_heig">
-            <h4>Contact US</h4>
-            <p>Banglor, India</p>
-            <p>8003010108 Products</p>
-            <p>hemendra.mali72@gmail.com</p>
-        </div>
-        
-        <div class="footer_left">
-            <h4>Subscribe Newsletter</h4>
-            <input type="text" placeholder="Enter your email">
-        </div>
-    </footer> <!-- Закрытие подвала -->
-</body>
+    <footer>
+      <!-- Подвал сайта -->
+      <div class="footer__last">
+        <img src="./img/logo.png" alt="footer-logo" width="111" />
+        <p>TRASAVE travel fund is a good way to track your travel money.</p>
+        <br />
+        <nav class="messangers">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </nav>
+      </div>
+      <div class="footer_left">
+        <h4>About</h4>
+        <p>Technical Info</p>
+        <p>Other Products</p>
+      </div>
+      <div class="footer_left left_heig">
+        <h4>Contact US</h4>
+        <p>Banglor, India</p>
+        <p>8003010108 Products</p>
+        <p>hemendra.mali72@gmail.com</p>
+      </div>
+
+      <div class="footer_left">
+        <h4>Subscribe Newsletter</h4>
+        <input type="text" placeholder="Enter your email" />
+      </div>
+    </footer>
+    <!-- Закрытие подвала -->
+
+    <script src="./script.js"></script>
+  </body>
 </html>
