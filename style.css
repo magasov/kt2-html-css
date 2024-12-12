@@ -6,6 +6,49 @@
   font-family: "Nunito", sans-serif;
 }
 
+.logo {
+  animation: infinite logos 3s;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+@keyframes logos {
+  0% {
+    box-shadow: 0;
+  }
+  10% {
+    box-shadow: 0 0 10px 10px rgb(103, 103, 103);
+  }
+  20% {
+    box-shadow: 0 0 10px 10px rgb(79, 79, 79);
+  }
+  30% {
+    box-shadow: 0 0 10px 10px rgb(103, 103, 103);
+  }
+  40% {
+    box-shadow: 0 0 10px 10px rgb(79, 79, 79);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgb(103, 103, 103);
+  }
+  60% {
+    box-shadow: 0 0 10px 10px rgb(79, 79, 79);
+  }
+  70% {
+    box-shadow: 0 0 10px 10px rgb(103, 103, 103);
+  }
+  80% {
+    box-shadow: 0 0 10px 10px rgb(79, 79, 79);
+  }
+  90% {
+    box-shadow: 0 0 10px 10px rgb(103, 103, 103);
+  }
+  100% {
+    box-shadow: 0;
+  }
+}
+
 section {
   margin: 100px 0;
 }
@@ -42,10 +85,25 @@ header {
   color: #fff;
   font-weight: 700;
   transition: all 0.3s ease;
+
+  animation: infinite 1s ease navbar;
+}
+
+@keyframes navbar {
+  0% {
+    border-bottom: 1px dashed transparent;
+  }
+  50% {
+    border-bottom: 1px dashed #49b649;
+  }
+  100% {
+    border-bottom: 1px dashed transparent;
+  }
 }
 
 .navbar a.active {
   color: #49b649;
+  border: none;
 }
 
 .navbar a:hover {
@@ -84,7 +142,18 @@ header {
 }
 
 .save__span {
-  color: #49b649;
+  animation: infinite 0.9s span;
+}
+@keyframes span {
+  0% {
+    color: #49b649;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #49b649;
+  }
 }
 
 .home {
@@ -123,6 +192,18 @@ header {
   font-size: 18px;
   font-weight: 800;
   padding: 10px 0;
+  animation: infinite 1s btn;
+}
+@keyframes btn {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
 }
 
 .btn2 {
@@ -138,6 +219,19 @@ header {
   color: #fff;
   font-size: 18px;
   font-weight: 800;
+  animation: infinite 1s btn2;
+}
+
+@keyframes btn2 {
+  0% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
 }
 
 .icons p {
